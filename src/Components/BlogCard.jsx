@@ -8,7 +8,7 @@ const BlogCard = ({ image, title, description, link }) => {
 
   React.useEffect(() => {
     if (inView) {
-      controls.start({ opacity: 1, y: 0 });
+      controls.start({ opacity: 1, x: 0 });
     }
   }, [controls, inView]);
 
@@ -16,7 +16,7 @@ const BlogCard = ({ image, title, description, link }) => {
     <motion.div
       ref={ref}
       className="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5"
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, x: 40 }}
       animate={controls}
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
@@ -42,6 +42,14 @@ const BlogCard = ({ image, title, description, link }) => {
 };
 
 const BlogCardGrid = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({ triggerOnce: true });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, x: 0 });
+    }
+  }, [controls, inView]);
   const blogPosts = [
     {
       image: "https://flowbite.com/docs/images/blog/image-1.jpg",
@@ -68,13 +76,20 @@ const BlogCardGrid = () => {
 
   return (
     <div className="max-w-7xl mx-auto p-4 bg-pink-300">
-      <h2 className="text-4xl font-extrabold text-gray-900 mb-4 text-center">
-        Trending Tech Insights
-      </h2>
-      <p className="text-lg font-semibold text-gray-600 mb-8 text-center">
-        Stay informed with the latest trends and innovations in technology,
-        handpicked for you.
-      </p>
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, x: -100 }}
+        animate={controls}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+      >
+        <h2 className="text-4xl font-extrabold text-gray-900 mb-4 text-center">
+          Trending Tech Insights
+        </h2>
+        <p className="text-lg font-semibold text-gray-600 mb-8 text-center">
+          Stay informed with the latest trends and innovations in technology,
+          handpicked for you.
+        </p>
+      </motion.div>
       <div className="max-w-7xl mx-auto p-4">
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map((post, index) => (

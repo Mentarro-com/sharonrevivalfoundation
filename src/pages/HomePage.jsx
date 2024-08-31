@@ -1,6 +1,7 @@
 import { TextParallaxContentExample } from "../Components/textparallax";
 import CarouselSlider from "../Components/carousel";
 import BlogCard from "../Components/BlogCard";
+import TestimonialSlider from "../Components/Testimonial";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <TextParallaxContentExample />
       <CarouselSlider />
       <BlogCard />
+      <TestimonialSlider />
     </div>
   );
 };
