@@ -21,6 +21,11 @@ const ThumbnailSlider = () => {
           focus: "center",
           width: '100%',
           fixedHeight: "470px",
+          breakpoints: {
+            600: {
+              fixedHeight: "211px",
+            },
+          },
           autoplay : true,
           pauseOnHover: false,
         }}
