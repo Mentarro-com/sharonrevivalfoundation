@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Gallery = () => {
+const GalleryImages = () => {
   const images = [
     {
       src: 'https://images.unsplash.com/photo-1550439062-609e1531270e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
@@ -61,4 +61,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default GalleryImages;
