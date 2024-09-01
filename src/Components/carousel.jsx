@@ -62,8 +62,16 @@ const ThumbnailSlider = () => {
           autoplay : true,
           pauseOnHover: false,
           breakpoints: {
+            1200: {
+              fixedWidth: 160,
+              fixedHeight: 80,
+            },
+            900: {
+              fixedWidth: 100,
+              fixedHeight: 60,
+            },
             600: {
-              fixedWidth: 60,
+              fixedWidth: 52,
               fixedHeight: 44,
             },
           },

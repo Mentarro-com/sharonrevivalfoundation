@@ -82,7 +82,7 @@ const BlogCardGrid = () => {
         animate={controls}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <h2 className="text-4xl font-extrabold text-gray-900 mb-4 text-center">
+        <h2 className="text-4xl font-extrabold text-gray-900 mb-4  mt-12 text-center">
           Trending Tech Insights
         </h2>
         <p className="text-lg font-semibold text-gray-600 mb-8 text-center">
@@ -90,8 +90,8 @@ const BlogCardGrid = () => {
           handpicked for you.
         </p>
       </motion.div>
-      <div className="max-w-7xl mx-auto p-4">
-        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="max-w-7xl mx-auto mb-8 p-4">
+        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
           {blogPosts.map((post, index) => (
             <BlogCard
               key={index}
@@ -101,10 +101,10 @@ const BlogCardGrid = () => {
               link={post.link}
             />
           ))}
-        </div>
+    </div>
       </div>
     </div>
   );
-};
+};    
 
 export default BlogCardGrid;
