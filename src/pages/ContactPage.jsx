@@ -1,3 +1,4 @@
+import ContactForm from "../Components/ContactForm";
 import MobilePhone from "../Components/mobile"
 
 const Contact = () => {
@@ -37,6 +38,7 @@ const Contact = () => {
         </button>
       </form>
       <MobilePhone/>
+      <ContactForm />
     </div>
   );
 };
