@@ -6,6 +6,9 @@ import Services from "./pages/ServicesPage";
 import About from "./pages/AboutPage";
 import Gallery from "./pages/GalleryPage";
 import Contact from "./pages/ContactPage";
+import WhatsApp from "./Components/Whatsapp";
+import ScrollUpButton from "./Components/ScrollUp";
+import Phone from "./Components/Contact";
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <WhatsApp />
+      <ScrollUpButton/>
+      <Phone/>
     </Router>
   );
 }
