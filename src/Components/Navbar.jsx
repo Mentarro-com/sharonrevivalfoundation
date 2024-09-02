@@ -154,7 +154,10 @@ const Navbar = () => {
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       {/* Logo */}
-      <h1 className="text-3xl text-white">Logo</h1>
+      <div className="flex">
+      <img src="/logo1.png" alt="Logo Image 1" className="h-12 w-auto" /> {/* First logo image */}
+      <img src="/name.png" alt="Logo Image 2" className="h-12 w-auto" /> {/* Second logo image */}
+      </div>
 
       {/* Desktop Navigation */}
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">

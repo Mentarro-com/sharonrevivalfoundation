@@ -8,9 +8,9 @@ function Gallery(){
     return(
         <div>
             <HoverCard />
-            <ImageGallery />
-            <ImageSlider />
-            <GalleryImages />
+            <div className="p-4"><ImageSlider /></div>
+            <ImageGallery /> 
+            {/* <GalleryImages /> */}
             <PhotoThree />
         </div>
     )
