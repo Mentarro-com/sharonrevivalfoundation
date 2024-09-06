@@ -10,23 +10,20 @@ const StickyImage = ({ imgUrl }) => {
     offset: ["end end", "end start"],
   });
 
-  // Media query to check if the screen size is desktop (min-width: 1024px)
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       setIsDesktop(window.matchMedia("(min-width: 1025px)").matches);
     };
-    handleResize(); // Initial check
+    handleResize(); 
     window.addEventListener("resize", handleResize); // Update on resize
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Call useTransform unconditionally
   const scale = useTransform(scrollYProgress, [0, 1, 3], [1, 0.75, 1]);
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 1]);
 
-  // Apply animation or static values based on screen size
   const animatedScale = isDesktop ? scale : 1;
   const animatedOpacity = isDesktop ? opacity : 0;
 
@@ -37,8 +34,8 @@ const StickyImage = ({ imgUrl }) => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: `calc(100vh - ${IMG_PADDING * 2}px)`,
-        top: isDesktop ? IMG_PADDING : "auto", // Sticky only on desktop
-        scale: animatedScale, // Apply scaling only if on desktop
+        top: isDesktop ? IMG_PADDING : "auto", 
+        scale: animatedScale, 
       }}
       ref={targetRef}
       className={`${
@@ -48,7 +45,7 @@ const StickyImage = ({ imgUrl }) => {
       {/* Overlay with fading effect */}
       <motion.div
         className="absolute inset-0 bg-neutral-950/70"
-        style={{ opacity: animatedOpacity }} // Apply opacity only on desktop
+        style={{ opacity: animatedOpacity }} 
       />
     </motion.div>
   );
@@ -61,35 +58,34 @@ const Feature = ({ children, topOffset, index }) => {
     offset: ["start end", "end start"],
   });
 
-  // Media query to check if the screen size is desktop (min-width: 1024px)
+  
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       setIsDesktop(window.matchMedia("(min-width: 1025px)").matches);
     };
-    handleResize(); // Initial check
-    window.addEventListener("resize", handleResize); // Update on resize
+    handleResize(); 
+    window.addEventListener("resize", handleResize); 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Call useTransform unconditionally
+  
   const translateY = useTransform(scrollYProgress, [0, 500], [index * 180, 0]);
   const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
-  // Apply animation or static values based on screen size
   const animatedTranslateY = isDesktop ? translateY : 0;
   const animatedOpacity = isDesktop ? opacity : 1;
 
   return (
     <motion.div
       ref={ref}
-      className={isDesktop ? `sticky top-${topOffset}` : ""} // Sticky only on desktop
+      className={isDesktop ? `sticky top-${topOffset}` : ""} 
       style={
         isDesktop
           ? { opacity: animatedOpacity, translateY: animatedTranslateY }
           : {}
-      } // Apply styles only on desktop
+      } 
     >
       {children}
     </motion.div>
