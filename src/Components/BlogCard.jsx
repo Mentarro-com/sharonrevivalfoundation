@@ -75,7 +75,7 @@ const BlogCardGrid = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto p-4 bg-pink-300">
+    <div className=" p-4 bg-pink-300">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, x: -100 }}
