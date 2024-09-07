@@ -71,7 +71,7 @@ const Feature = ({ children, topOffset, index }) => {
   }, []);
 
   
-  const translateY = useTransform(scrollYProgress, [0, 500], [index * 180, 0]);
+  const translateY = useTransform(scrollYProgress, [90,500], [index * 180,0]);
   const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   const animatedTranslateY = isDesktop ? translateY : 0;
@@ -102,7 +102,7 @@ const NewFeatures = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
-    <section className="relative mb-16">
+    <section className="relative pb-16 bg-[#EDEBE5]">
       <div className="grid lg:grid-cols-2 lg:items-start ">
       <div className={`space-y-20 ${isDesktop ? "" : "mb-16"}`}>
           <Feature topOffset={"a"} index={0.5}>
@@ -168,7 +168,7 @@ const NewFeatures = () => {
                 </h4>
                 <p className="mt-2 text-lg">
                   Access an extensive library of interactive resources that make
-                  your learning journey engaging and interactive.
+                  your learning journey engaging and interactive in a way that you have never seen before.
                 </p>
               </div>
             </div>
