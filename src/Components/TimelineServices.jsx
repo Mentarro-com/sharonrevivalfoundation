@@ -3,47 +3,44 @@ import React from 'react';
 const Timeline = () => {
   const timelineData = [
     {
-      title: 'Frontend Development',
+      title: 'Initial Consultation',
       description:
-        'Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.',
-      
+        'An in-depth assessment to understand the individual’s needs and create a personalized treatment plan.',
     },
     {
-      title: 'Graphic Design',
+      title: 'Detoxification Phase',
       description:
-        'Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor.',
-      
+        'A medically supervised detox process to safely remove harmful substances from the body.',
     },
     {
-      title: 'Lead UI/UX Designer',
+      title: 'Rehabilitation Therapy',
       description:
-        'Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor.',
-      
+        'Personalized therapy sessions to address physical, psychological, and emotional recovery.',
     },
     {
-      title: 'Lead UI/UX Designer',
+      title: 'Aftercare Planning',
       description:
-        'Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor.',
-      
+        'Development of a long-term recovery plan including support groups and ongoing counseling.',
     },
   ];
 
   return (
-    <div className="relative flex h-screen items-center justify-center bg-white px-6 md:px-60">
-      {/* Title in the top left corner */}
-      <h1 className="absolute top-0 left-0 p-4 text-4xl font-bold text-gray-700">
-        My Timeline
+    <div className="relative flex flex-col items-center bg-white px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-16">
+      {/* Title */}
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-700 mb-6">
+        Rehabilitation Timeline
       </h1>
 
-      {/* Timeline content with responsive top padding for mobile */}
-      <div className="mt-10 pt-10 md:pt-0 space-y-6 border-l-2 border-dashed">
+      {/* Timeline content */}
+      <div className="relative space-y-8 md:space-y-12 lg:space-y-16 border-l-2 border-dashed border-gray-300">
         {timelineData.map((item, index) => (
-          <div key={index} className="relative w-full">
+          <div key={index} className="relative flex items-start md:items-center">
+            {/* Timeline marker */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-green-500"
+              className="absolute -left-4 md:-left-6 lg:-left-8 h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 text-green-500"
             >
               <path
                 fillRule="evenodd"
@@ -52,11 +49,12 @@ const Timeline = () => {
               />
             </svg>
             <div className="ml-6">
-              <h4 className="font-bold text-green-500">{item.title}</h4>
-              <p className="mt-2 max-w-screen-sm text-sm text-gray-500">
+              <h4 className="text-lg md:text-xl lg:text-2xl font-semibold text-green-500">
+                {item.title}
+              </h4>
+              <p className="mt-2 text-sm md:text-base lg:text-lg text-gray-500">
                 {item.description}
               </p>
-
             </div>
           </div>
         ))}
