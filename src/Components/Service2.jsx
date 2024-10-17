@@ -16,7 +16,7 @@ const StickyImage = ({ imgUrl }) => {
     const handleResize = () => {
       setIsDesktop(window.matchMedia("(min-width: 1025px)").matches);
     };
-    handleResize(); 
+    handleResize();
     window.addEventListener("resize", handleResize); // Update on resize
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -34,78 +34,58 @@ const StickyImage = ({ imgUrl }) => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: `calc(100vh - ${IMG_PADDING * 2}px)`,
-        top: isDesktop ? IMG_PADDING : "auto", 
-        scale: animatedScale, 
+        top: isDesktop ? IMG_PADDING : "auto",
+        scale: animatedScale,
       }}
       ref={targetRef}
       className={`${
         isDesktop ? "sticky top-0" : ""
       } z-0 overflow-hidden rounded-3xl`}
     >
-      {/* Overlay with fading effect */}
       <motion.div
         className="absolute inset-0 bg-neutral-950/70"
-        style={{ opacity: animatedOpacity }} 
+        style={{ opacity: animatedOpacity }}
       />
     </motion.div>
   );
 };
 
-const Feature = ({ children, topOffset, index }) => {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-
-  
+const Feature = ({ children, topOffset }) => {
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       setIsDesktop(window.matchMedia("(min-width: 1025px)").matches);
     };
-    handleResize(); 
-    window.addEventListener("resize", handleResize); 
+    handleResize();
+    window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  
-  const translateY = useTransform(scrollYProgress, [90,500], [index * 180,0]);
-  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
-
-  const animatedTranslateY = isDesktop ? translateY : 0;
-  const animatedOpacity = isDesktop ? opacity : 1;
-
-  return (
-    <motion.div
-      ref={ref}
-      className={isDesktop ? `sticky top-${topOffset}` : ""} 
-      style={
-        isDesktop
-          ? { opacity: animatedOpacity, translateY: animatedTranslateY }
-          : {}
-      } 
-    >
-      {children}
-    </motion.div>
-  );
+  return <div>{children}</div>;
 };
+
 const NewFeatures = () => {
   const [isDesktop, setIsDesktop] = useState(false);
+
   useEffect(() => {
     const handleResize = () => {
       setIsDesktop(window.matchMedia("(min-width: 1025px)").matches);
     };
-    handleResize(); // Initial check
-    window.addEventListener("resize", handleResize); // Update on resize
+    handleResize();
+    window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
   return (
     <section className="relative pb-16 bg-[#EDEBE5]">
-      <div className="grid lg:grid-cols-2 lg:items-start ">
-      <div className={`space-y-20 ${isDesktop ? "" : "mb-16"}`}>
-          <Feature topOffset={"a"} index={0.5}>
+      <h2 className="text-4xl font-extrabold text-gray-900 mb-12 pt-12 text-center relative">
+      WHY CHOOSE US
+      </h2>
+
+      <div className="grid lg:grid-cols-2 lg:items-start">
+        <div className={`space-y-16 ${isDesktop ? "" : "mb-16"}`}>
+          <Feature>
             <div className="flex">
               <div className="flex-shrink-0">
                 <div className="flex items-center justify-center w-12 h-12 rounded-md">
@@ -128,9 +108,9 @@ const NewFeatures = () => {
                   </svg>
                 </div>
               </div>
-              <div className="ml-4 ">
+              <div className="ml-4">
                 <h4 className="text-2xl font-medium leading">
-                  Advanced Learning Algorithms
+                  Individual Care
                 </h4>
                 <p className="mt-2 text-lg">
                   Discover our improved learning algorithms that adapt to your
@@ -140,8 +120,8 @@ const NewFeatures = () => {
               </div>
             </div>
           </Feature>
-          <Feature topOffset={"b"} index={1.5}>
-            <div className="flex ">
+          <Feature>
+            <div className="flex">
               <div className="flex-shrink-0">
                 <div className="flex items-center justify-center w-12 h-12 rounded-md">
                   <svg
@@ -164,16 +144,17 @@ const NewFeatures = () => {
               </div>
               <div className="ml-4">
                 <h4 className="text-2xl font-medium leading">
-                  Interactive Learning Resources
+                  Confidential Care & Discretion
                 </h4>
                 <p className="mt-2 text-lg">
                   Access an extensive library of interactive resources that make
-                  your learning journey engaging and interactive in a way that you have never seen before.
+                  your learning journey engaging and interactive in a way that
+                  you have never seen before.
                 </p>
               </div>
             </div>
           </Feature>
-          <Feature topOffset={"c"} index={2.8}>
+          <Feature>
             <div className="flex">
               <div className="flex-shrink-0">
                 <div className="flex items-center justify-center w-12 h-12 rounded-md">
@@ -196,7 +177,7 @@ const NewFeatures = () => {
               </div>
               <div className="ml-4">
                 <h4 className="text-2xl font-medium leading">
-                  Enhanced Video Streaming
+                  24/7 Resident Support Facilitator
                 </h4>
                 <p className="mt-2 text-lg">
                   Experience seamless video integration with enhanced streaming
@@ -206,7 +187,7 @@ const NewFeatures = () => {
               </div>
             </div>
           </Feature>
-          <Feature topOffset={"d"} index={3.8}>
+          <Feature>
             <div className="flex">
               <div className="flex-shrink-0">
                 <div className="flex items-center justify-center w-12 h-12 rounded-md">
@@ -230,7 +211,7 @@ const NewFeatures = () => {
               </div>
               <div className="ml-4">
                 <h4 className="text-2xl font-medium leading">
-                  Advanced Quiz Generation
+                  Tailored Solutions for Recovery
                 </h4>
                 <p className="mt-2 text-lg">
                   Take your knowledge testing to the next level with advanced
@@ -241,11 +222,7 @@ const NewFeatures = () => {
             </div>
           </Feature>
         </div>
-        <div
-          className={`sticky top-0 self-start ${
-            isDesktop ? "h-[200vh]" : ""
-          } lg:mt-0`}
-        >
+        <div className="lg:mt-0">
           <StickyImage imgUrl="https://images.unsplash.com/photo-1516542076529-1ea3854896f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxNHx8Y29tcHV0ZXJ8ZW58MHwwfHx8MTY5OTE3MDk1N3ww&ixlib=rb-4.0.3&q=80&w=1080" />
         </div>
       </div>

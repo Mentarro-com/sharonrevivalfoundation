@@ -97,19 +97,21 @@ const OverlayCopy = ({ subheading, heading }) => {
 
 const ExampleContent = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
-    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
-      Additional content explaining the above card here
-    </h2>
+    <h2 className="col-span-1 text-5xl font-bold md:col-span-4">Who We Are</h2>
     <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-        blanditiis soluta eius quam modi aliquam quaerat odit deleniti minima
-        maiores voluptate est ut saepe accusantium maxime doloremque nulla
-        consectetur possimus.
+      <p className="mb-4 text-xl text-neutral-600 ">
+        Welcome to Sharon Revival Foundation. We are a holistic luxury
+        rehabilitation center known for our exceptional love, care, and support.
+        Sharon Revival is the top-rated rehabilitation and de-addiction
+        treatment center in India.With a sophisticated yet relaxed atmosphere
+        and timeless style, it is the perfect place to begin your recovery
+        journey. 
       </p>
-      <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-        reiciendis blanditiis aliquam aut fugit sint.
+      <p className="mb-8 text-xl text-neutral-600 ">
+        Recovery starts here…Sharon Revival Foundation is designed to
+        be a safe haven where you can find recovery, peace, rest, and happiness.
+        We are dedicated to providing the quality of treatment and care that we
+        would wish for our own loved ones
       </p>
       {/*<button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
         Learn more <FiArrowUpRight className="inline" />

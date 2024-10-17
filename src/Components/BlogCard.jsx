@@ -75,7 +75,7 @@ const BlogCardGrid = () => {
   ];
 
   return (
-    <div className=" p-4 bg-pink-300">
+    <div className=" p-4 bg-[#ACE1AF]">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, x: -100 }}
