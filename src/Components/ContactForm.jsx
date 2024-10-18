@@ -1,23 +1,32 @@
-import React, { useState, useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faLocationDot, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faLocationDot,
+  faEnvelope,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
 
   useEffect(() => {
     AOS.init({
       duration: 1000,
       offset: 100,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       once: true,
     });
   }, []);
@@ -30,12 +39,12 @@ const ContactForm = () => {
   };
 
   const handleFocus = (e) => {
-    e.target.parentNode.classList.add('focus');
+    e.target.parentNode.classList.add("focus");
   };
 
   const handleBlur = (e) => {
-    if (e.target.value === '') {
-      e.target.parentNode.classList.remove('focus');
+    if (e.target.value === "") {
+      e.target.parentNode.classList.remove("focus");
     }
   };
 
@@ -44,7 +53,9 @@ const ContactForm = () => {
 
     // Construct the WhatsApp URL with the message
     const message = `Hello, I'm ${formData.name}. My email is ${formData.email} and my phone number is ${formData.phone}. Here's my message: ${formData.message}`;
-    const whatsappURL = `https://wa.me/+917339068991?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/+917339068991?text=${encodeURIComponent(
+      message
+    )}`;
 
     // Redirect to WhatsApp
     window.location.href = whatsappURL;
@@ -71,22 +82,27 @@ const ContactForm = () => {
       <div className="bg-white rounded-lg shadow-lg max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 overflow-hidden mt-8">
         {/* "Let's Get in Touch" Section */}
         <div className="p-6 md:p-8" data-aos="fade-right">
-          <h3 className="text-teal-500 text-2xl font-semibold mb-4">Let's get in touch</h3>
+          <h3 className="text-teal-500 text-2xl font-semibold mb-4">
+            Let's get in touch
+          </h3>
           <p className="text-gray-600 mb-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolorum adipisci recusandae praesentium dicta!
+            Sharon in Chennai is one of the leading businesses in the
+            Rehabilitation Centre For Alcohol. Also known for Rehabilitation
+            Centre For Alcohol, Rehabilitation Centre For Drug Addiction and
+            much more Healing Hands Hub, Chennai.
           </p>
           <div className="mb-4">
             <div className="flex items-center text-gray-600 mb-3">
               <FontAwesomeIcon icon={faLocationDot} className="w-6 h-6 mr-3" />
-              <p>92 Cherry Drive Uniondale, NY 11553</p>
+              <p>No 112 JN Road Anakaputhur Chennai-70</p>
             </div>
             <div className="flex items-center text-gray-600 mb-3">
               <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6 mr-3" />
-              <p>lorem@ipsum.com</p>
+              <p>sharonrevivalfoundation@gmail.com</p>
             </div>
             <div className="flex items-center text-gray-600 mb-3">
               <FontAwesomeIcon icon={faPhone} className="w-6 h-6 mr-3" />
-              <p>123-456-789</p>
+              <p>+91 72008 00851/52/53</p>
             </div>
           </div>
           <div>
@@ -128,9 +144,11 @@ const ContactForm = () => {
         <div className="relative bg-teal-500 p-6 md:p-8" data-aos="fade-left">
           <span className="absolute w-32 h-32 bg-gradient-to-br from-transparent to-teal-600 rounded-full right-6 top-6 animate-bounce-slow"></span>
           <span className="absolute w-20 h-20 bg-gradient-to-br from-transparent to-teal-700 rounded-full right-10 top-10 animate-bounce-slow delay-150"></span>
-          
+
           <form className="relative z-10" onSubmit={handleSubmit}>
-            <h3 className="text-white text-2xl font-semibold mb-4">Contact us</h3>
+            <h3 className="text-white text-2xl font-semibold mb-4">
+              Contact us
+            </h3>
             <div className="relative mb-4">
               <input
                 type="text"
@@ -145,7 +163,7 @@ const ContactForm = () => {
               />
               <label
                 className={`absolute left-5 top-1/2 transform -translate-y-1/2 text-white pointer-events-none transition-all duration-300 ease-in-out ${
-                  formData.name && 'transform -translate-y-6 text-xs'
+                  formData.name && "transform -translate-y-6 text-xs"
                 }`}
               >
                 Username
@@ -165,7 +183,7 @@ const ContactForm = () => {
               />
               <label
                 className={`absolute left-5 top-1/2 transform -translate-y-1/2 text-white pointer-events-none transition-all duration-300 ease-in-out ${
-                  formData.email && 'transform -translate-y-6 text-xs'
+                  formData.email && "transform -translate-y-6 text-xs"
                 }`}
               >
                 Email
@@ -185,7 +203,7 @@ const ContactForm = () => {
               />
               <label
                 className={`absolute left-5 top-1/2 transform -translate-y-1/2 text-white pointer-events-none transition-all duration-300 ease-in-out ${
-                  formData.phone && 'transform -translate-y-6 text-xs'
+                  formData.phone && "transform -translate-y-6 text-xs"
                 }`}
               >
                 Phone
@@ -205,7 +223,7 @@ const ContactForm = () => {
               ></textarea>
               <label
                 className={`absolute left-5 top-1/2 transform -translate-y-1/2 text-white pointer-events-none transition-all duration-300 ease-in-out ${
-                  formData.message && 'transform -translate-y-6 text-xs'
+                  formData.message && "transform -translate-y-6 text-xs"
                 }`}
               >
                 Message

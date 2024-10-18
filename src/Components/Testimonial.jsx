@@ -51,7 +51,7 @@ const TestimonialSlider = () => {
             <div className="bg-white shadow-md border border-gray-200 rounded-lg w-full max-w-xs h-60 p-4 flex items-center justify-center">
               <blockquote className="relative text-gray-900 text-center p-4 w-full m-1">
                 {testimonial.text}
-                <cite className="block mt-2 text-blue-700 font-bold">- {testimonial.author}</cite>
+                <cite className="block mt-2 text-[#22C55E] font-bold">- {testimonial.author}</cite>
               </blockquote>
             </div>
           </SplideSlide>
@@ -61,10 +61,10 @@ const TestimonialSlider = () => {
       <style>{`
         blockquote {
           background:
-            linear-gradient(to right, #039be5 6px, transparent 4px) 0 100%,
-            linear-gradient(to left, #039be5 6px, transparent 4px) 100% 0,
-            linear-gradient(to bottom, #039be5 6px, transparent 4px) 100% 0,
-            linear-gradient(to top, #039be5 6px, transparent 4px) 0 100%;
+            linear-gradient(to right, #22C55E 6px, transparent 4px) 0 100%,
+            linear-gradient(to left, #22C55E 6px, transparent 4px) 100% 0,
+            linear-gradient(to bottom, #22C55E 6px, transparent 4px) 100% 0,
+            linear-gradient(to top, #22C55E 6px, transparent 4px) 0 100%;
           background-repeat: no-repeat;
           background-size: 20px 20px;
           position: relative;
@@ -77,7 +77,7 @@ const TestimonialSlider = () => {
         blockquote:after {
           font-family: FontAwesome;
           position: absolute;
-          color: #039be5;
+          color: #22C55E;
           font-size: 34px;
         }
 

@@ -80,7 +80,7 @@ const NewFeatures = () => {
   return (
     <section className="relative pb-16 bg-[#EDEBE5]">
       <h2 className="text-4xl font-extrabold text-gray-900 mb-12 pt-12 text-center relative">
-      WHY CHOOSE US
+        WHY CHOOSE US
       </h2>
 
       <div className="grid lg:grid-cols-2 lg:items-start">
@@ -113,9 +113,9 @@ const NewFeatures = () => {
                   Individual Care
                 </h4>
                 <p className="mt-2 text-lg">
-                  Discover our improved learning algorithms that adapt to your
-                  preferences and provide even more personalized learning
-                  suggestions.
+                  We understand that everyone’s journey to recovery is
+                  different, so we create customized treatment plans just for
+                  you.
                 </p>
               </div>
             </div>
@@ -147,9 +147,9 @@ const NewFeatures = () => {
                   Confidential Care & Discretion
                 </h4>
                 <p className="mt-2 text-lg">
-                  Access an extensive library of interactive resources that make
-                  your learning journey engaging and interactive in a way that
-                  you have never seen before.
+                  We understand the importance of trust, so we handle every
+                  aspect of your care with the highest level of discretion and
+                  professionalism.
                 </p>
               </div>
             </div>
@@ -180,9 +180,9 @@ const NewFeatures = () => {
                   24/7 Resident Support Facilitator
                 </h4>
                 <p className="mt-2 text-lg">
-                  Experience seamless video integration with enhanced streaming
-                  capabilities, providing a better and more uninterrupted
-                  learning experience.
+                  We provide round-the-clock support through dedicated staff who
+                  are here to assist with any questions, concerns, or needs you
+                  may have during your stay.
                 </p>
               </div>
             </div>
@@ -214,9 +214,11 @@ const NewFeatures = () => {
                   Tailored Solutions for Recovery
                 </h4>
                 <p className="mt-2 text-lg">
-                  Take your knowledge testing to the next level with advanced
-                  quiz generation, providing more customization options for your
-                  quizzes.
+                  At our rehabilitation center, we recognize that every person’s
+                  journey to healing is different. That’s why we take the time
+                  to understand your specific challenges, goals, and
+                  preferences, and craft a personalized treatment program just
+                  for you.
                 </p>
               </div>
             </div>

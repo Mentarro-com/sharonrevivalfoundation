@@ -10,8 +10,9 @@ const Home = () => {
       <TextParallaxContentExample />
       <NewFeatures/>
       <CarouselSlider />
-      <BlogCard />
       <ExploreComponents/>
+      <BlogCard />
+      
     </div>
   );
 };
