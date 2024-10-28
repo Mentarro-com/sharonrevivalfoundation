@@ -1,44 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 
+body {
+  font-family: "Quicksand", serif; /* or '', sans-serif */
+}
 /*=======Carousel component=========*/
 .splide__slide {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-.splide__slide.is-active {
-    opacity: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
-  
+
+.splide__slide.is-active {
+  opacity: 1;
+}
+
 .splide__slide {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .splide-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px; /* Adjust if needed */
-  }
-.splide-main{
-    background-color: #BBF7D0;
-    padding : 20px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust if needed */
+}
+.splide-main {
+  background-color: #bbf7d0;
+  padding: 20px;
 }
 .top-a {
   top: 0rem;
 }
-.top-b{
-  top:0.5rem;
+.top-b {
+  top: 0.5rem;
 }
-.top-c{
-  top:0rem;
+.top-c {
+  top: 0rem;
 }
-.top-d{
+.top-d {
   top: 3rem;
 }

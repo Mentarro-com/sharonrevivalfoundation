@@ -88,7 +88,7 @@ const NewFeatures = () => {
           <Feature>
             <div className="flex">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center w-12 h-12 rounded-md">
+                <div className="flex items-center justify-center w-12 h-12 rounded-md text-[#198a42]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -109,7 +109,7 @@ const NewFeatures = () => {
                 </div>
               </div>
               <div className="ml-4">
-                <h4 className="text-2xl font-medium leading">
+                <h4 className="text-2xl font-medium leading text-[#198a42]">
                   Individual Care
                 </h4>
                 <p className="mt-2 text-lg">
@@ -123,7 +123,7 @@ const NewFeatures = () => {
           <Feature>
             <div className="flex">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center w-12 h-12 rounded-md">
+                <div className="flex items-center justify-center w-12 h-12 rounded-md text-[#198a42]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -143,7 +143,7 @@ const NewFeatures = () => {
                 </div>
               </div>
               <div className="ml-4">
-                <h4 className="text-2xl font-medium leading">
+                <h4 className="text-2xl font-medium leading text-[#198a42]">
                   Confidential Care & Discretion
                 </h4>
                 <p className="mt-2 text-lg">
@@ -157,7 +157,7 @@ const NewFeatures = () => {
           <Feature>
             <div className="flex">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center w-12 h-12 rounded-md">
+                <div className="flex items-center justify-center w-12 h-12 rounded-md text-[#198a42]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -176,7 +176,7 @@ const NewFeatures = () => {
                 </div>
               </div>
               <div className="ml-4">
-                <h4 className="text-2xl font-medium leading">
+                <h4 className="text-2xl font-medium leading text-[#198a42]">
                   24/7 Resident Support Facilitator
                 </h4>
                 <p className="mt-2 text-lg">
@@ -190,7 +190,7 @@ const NewFeatures = () => {
           <Feature>
             <div className="flex">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center w-12 h-12 rounded-md">
+                <div className="flex items-center justify-center w-12 h-12 rounded-md text-[#198a42]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -210,7 +210,7 @@ const NewFeatures = () => {
                 </div>
               </div>
               <div className="ml-4">
-                <h4 className="text-2xl font-medium leading">
+                <h4 className="text-2xl font-medium leading text-[#198a42]">
                   Tailored Solutions for Recovery
                 </h4>
                 <p className="mt-2 text-lg">

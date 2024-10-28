@@ -1,39 +1,40 @@
-import React from 'react';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/splide/css';
-import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import React from "react";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/css";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const TestimonialSlider = () => {
   const testimonials = [
     {
-      text: "It’s good to meet you, Dr. Banner. Your work on anti-electron collisions is unparalleled. And I’m a huge fan of the way you lose control and turn into an enormous green rage monster.",
+      text: "The care and attention I received at Sharon Revival Foundation changed my life. The team truly understood my needs and made me feel safe and supported every step of the way.",
       author: "Tony Stark",
     },
     {
-      text: "The Avengers. That's what we call ourselves; we're sort of like a team. 'Earth's Mightiest Heroes' type thing.",
+      text: "The facility is comfortable and feels more like home than a hospital. My treatment plan was completely tailored to me, which made a huge difference in my recovery.",
       author: "Nick Fury",
     },
     {
-      text: "Genius, billionaire, playboy, philanthropist.",
+      text: "The entire staff respects privacy, which helped me feel comfortable and open up more. I’m so grateful for the new life I have, thanks to their caring guidance.",
       author: "Tony Stark",
-    }
+    },
   ];
 
   return (
-    <div className="p-6 pt-16 pb-16 bg-[#EDEBE5]" >
+    <div className="p-6 pt-16 pb-16 bg-[#EDEBE5]">
       <h2 className="text-4xl font-bold text-gray-900 text-center mb-4">
         What Our Clients Say
       </h2>
       <p className="text-xl text-gray-600 text-center mb-16">
-        Hear from our satisfied clients and see how we’ve helped them achieve success.
+        Hear from our satisfied clients and see how we’ve helped them achieve
+        success.
       </p>
-      
+
       <Splide
         options={{
-          type: 'loop',
-          drag: 'free',
-          focus: 'center',
+          type: "loop",
+          drag: "free",
+          focus: "center",
           perPage: 3,
           autoScroll: {
             speed: 1,
@@ -51,7 +52,9 @@ const TestimonialSlider = () => {
             <div className="bg-white shadow-md border border-gray-200 rounded-lg w-full max-w-xs h-60 p-4 flex items-center justify-center">
               <blockquote className="relative text-gray-900 text-center p-4 w-full m-1">
                 {testimonial.text}
-                <cite className="block mt-2 text-[#22C55E] font-bold">- {testimonial.author}</cite>
+                <cite className="block mt-2 text-[#22C55E] font-bold">
+                  - {testimonial.author}
+                </cite>
               </blockquote>
             </div>
           </SplideSlide>

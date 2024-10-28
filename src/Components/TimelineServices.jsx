@@ -1,4 +1,5 @@
 import React from 'react';
+import './DotsBackground.css';
 
 const Timeline = () => {
   const timelineData = [
@@ -25,8 +26,10 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="relative flex flex-col items-center bg-white px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-16">
-      {/* Title */}
+    <div className="relative flex flex-col items-center dots-bg px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-16">
+      <div className="dots-pattern dots-top-right"></div>
+      <div className="dots-pattern dots-bottom-left"></div>
+    
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-700 mb-6">
         Rehabilitation Timeline
       </h1>

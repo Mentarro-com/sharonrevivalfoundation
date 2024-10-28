@@ -1,0 +1,55 @@
+/* Wrapper with a green background */
+.dots-bg {
+    position: relative;
+    background-color: #F6FCF5; /* Tailwind's bg-green-200 equivalent */
+    overflow: hidden;
+  }
+  
+  /* Base dotted pattern for reusability */
+  .dots-pattern {
+    /* Use relative values for responsive dot size and gap */
+    --dots-gap: max(0.8vw, 6px); /* Adjust gap based on viewport width, minimum 6px */
+    --dots-size: max(0.3vw, 3px); /* Dot size based on viewport width, minimum 3px */
+    --dots-color: hsl(140, 82%, 45%);
+    --computed-dot-size: calc(var(--dots-size) / 2);
+    
+    /* Set size based on viewport width for responsiveness */
+    width: 24vw; /* Adjust this value as needed */
+    height: 24vw;
+    
+    background-image: radial-gradient(
+      var(--dots-color) var(--computed-dot-size),
+      transparent var(--computed-dot-size)
+    );
+    
+    /* Responsive background pattern size based on gap and dot size */
+    background-size: calc(var(--dots-gap) + var(--dots-size))
+      calc(var(--dots-gap) + var(--dots-size));
+    
+    opacity: 0.7;
+    position: absolute;
+    border-radius: 50%;
+  }
+  /* Top-right dot pattern */
+  .dots-top-right {
+    top: 5%;
+    right: 5%;
+    transform: translate(50%, -50%);
+  }
+  
+  /* Bottom-left dot pattern */
+  .dots-bottom-left {
+    bottom: 5%;
+    left: 5%;
+    transform: translate(-50%, 50%);
+  }
+  
+  /* Center dot pattern */
+  .dots-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+  }
+  

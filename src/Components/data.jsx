@@ -1,31 +1,31 @@
 export const slides = [
   {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    src: '/Rehab-building.jpeg',
     description: 'A Peace care life center helps individuals recover from addiction. The goal is to promote long-term recovery and improved quality of life.',
     title: 'REHAB BUILDING',
   },
   {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    src: '/Hall.jpeg',
     description: 'The admin room in a rehab center oversees patient care operations.',
     title: 'ADMIN ROOM',
   },
   {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    src: '/Waiting-hall.jpeg',
     description: 'The waiting room in a rehab center provides a comfortable, supportive environment',
     title: 'WAITING ROOM',
   },
   {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    src: '/Doctor.jpeg',
     description: 'The checkup area in a rehab center is where patients receive medical examinations',
     title: 'CHECKUP AREA',
   },
   {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    src: '/Office.jpeg',
     description: 'The office hall in a rehab center is a space for administrative tasks',
     title: 'OFFICE HALL',
   },
   {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    src: '/bed-accomodation.jpeg',
     description: 'The counseling area in a rehab center is where therapeutic sessions occur',
     title: 'COUNSELING AREA',
   },

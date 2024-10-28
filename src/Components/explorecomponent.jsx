@@ -37,7 +37,7 @@ const ExploreComponents = () => {
 
                 <div className="mt-4 md:mx-4 md:mt-0">
                   <h1 className="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                    Experienced Multidisciplinary Team
+                    Holistic Therapies
                   </h1>
                   <p className="mt-3 text-gray-500 dark:text-gray-300">
                     A team of skilled professionals, including doctors, nurses,
