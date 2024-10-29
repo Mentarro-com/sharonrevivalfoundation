@@ -152,11 +152,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
+    <nav className="w-full flex py-6 justify-between items-center navbar sticky top-0 bg-black z-50">
       {/* Logo */}
       <div className="flex">
-      <img src="/logo1.png" alt="Logo Image 1" className="h-12 w-auto" /> {/* First logo image */}
-      <img src="/name.png" alt="Logo Image 2" className="h-12 w-auto" /> {/* Second logo image */}
+        <img src="/logo1.png" alt="Logo Image 1" className="h-12 w-auto" /> {/* First logo image */}
+        <img src="/name.png" alt="Logo Image 2" className="h-12 w-auto" /> {/* Second logo image */}
       </div>
 
       {/* Desktop Navigation */}
@@ -212,5 +212,6 @@ const Navbar = () => {
     </nav>
   );
 };
+
 
 export default Navbar;

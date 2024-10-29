@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 export const TextParallaxContentExample = () => {
   return (
@@ -105,17 +106,19 @@ const ExampleContent = () => (
         Sharon Revival is the top-rated rehabilitation and de-addiction
         treatment center in India.With a sophisticated yet relaxed atmosphere
         and timeless style, it is the perfect place to begin your recovery
-        journey. 
+        journey.
       </p>
       <p className="mb-8 text-xl text-neutral-600 ">
-        Recovery starts here…Sharon Revival Foundation is designed to
-        be a safe haven where you can find recovery, peace, rest, and happiness.
-        We are dedicated to providing the quality of treatment and care that we
-        would wish for our own loved ones
+        Recovery starts here…Sharon Revival Foundation is designed to be a safe
+        haven where you can find recovery, peace, rest, and happiness. We are
+        dedicated to providing the quality of treatment and care that we would
+        wish for our own loved ones
       </p>
-      {/*<button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
-        Learn more <FiArrowUpRight className="inline" />
-</button>*/}
+      <Link to="/contact">
+        <button className="w-full rounded bg-[#22C55E] px-9 py-4 text-xl text-white transition-colors hover:bg-[#176634] md:w-fit">
+          Contact Us <FiArrowUpRight className="inline" />
+        </button>
+      </Link>
     </div>
   </div>
 );

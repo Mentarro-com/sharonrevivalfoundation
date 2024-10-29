@@ -7,7 +7,7 @@ const ExploreComponents = () => {
             <div className="w-full space-y-12 lg:w-1/2">
               <div>
                 <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">
-                  explore our <br /> awesome Components
+                  explore our <br /> awesome Services
                 </h1>
 
                 <div className="mt-2">
