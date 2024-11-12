@@ -152,64 +152,64 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar sticky top-0 bg-black z-50">
-      {/* Logo */}
-      <div className="flex">
-        <img src="/logo1.png" alt="Logo Image 1" className="h-12 w-auto" /> {/* First logo image */}
-        <img src="/name.png" alt="Logo Image 2" className="h-12 w-auto" /> {/* Second logo image */}
-      </div>
+    <nav className="sticky w-full flex py-6 justify-between items-center navbar top-0 bg-black z-50 ">
+  {/* Logo */}
+  <div className="flex">
+    <img src="/logo1.png" alt="Logo Image 1" className="h-12 w-auto" /> {/* First logo image */}
+    <img src="/name.png" alt="Logo Image 2" className="h-12 w-auto" /> {/* Second logo image */}
+  </div>
 
-      {/* Desktop Navigation */}
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {navLinks.map((nav, index) => (
-          <FlyoutLink
-            key={nav.id}
-            to={nav.path}
-            FlyoutContent={<div>Your flyout content here</div>} // Optional
-          >
-            <li
-              className={`font-poppins font-normal cursor-pointer text-[16px] ${
-                active === nav.title ? "text-white" : "text-dimWhite"
-              } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-              onClick={() => handleNavClick(nav.title)}
-            >
-              {nav.title}
-            </li>
-          </FlyoutLink>
-        ))}
-      </ul>
-
-      {/* Mobile Navigation */}
-      <div className="sm:hidden flex flex-1 justify-end items-center">
-        <AnimatedHamburgerButton toggle={toggle} setToggle={setToggle} />
-        {/* Sidebar */}
-        <motion.div
-          initial={false}
-          animate={toggle ? "open" : "closed"}
-          variants={navVariants}
-          className={`p-6 bg-black absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-40`}
-          style={{ display: toggle ? "block" : "none" }} // This line hides the sidebar completely when closed
+  {/* Desktop Navigation */}
+  <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+    {navLinks.map((nav, index) => (
+      <FlyoutLink
+        key={nav.id}
+        to={nav.path}
+        FlyoutContent={<div>Your flyout content here</div>} // Optional
+      >
+        <li
+          className={`font-poppins font-normal cursor-pointer text-[16px] ${
+            active === nav.title ? "text-white" : "text-dimWhite"
+          } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
+          onClick={() => handleNavClick(nav.title)}
         >
-          <motion.ul
-            variants={navVariants}
-            className="list-none flex justify-end items-start flex-1 flex-col"
+          {nav.title}
+        </li>
+      </FlyoutLink>
+    ))}
+  </ul>
+
+  {/* Mobile Navigation */}
+  <div className="sm:hidden flex flex-1 justify-end items-center z-[100]">
+    <AnimatedHamburgerButton toggle={toggle} setToggle={setToggle} />
+    {/* Sidebar */}
+    <motion.div
+      initial={false}
+      animate={toggle ? "open" : "closed"}
+      variants={navVariants}
+      className={`p-6 bg-black fixed top-[4rem] right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-40`}
+      style={{ display: toggle ? "block" : "none" }} // This line hides the sidebar completely when closed
+    >
+      <motion.ul
+        variants={navVariants}
+        className="list-none flex justify-end items-start flex-1 flex-col"
+      >
+        {navLinks.map((nav, index) => (
+          <motion.li
+            variants={itemVariants}
+            key={nav.id}
+            className={`font-poppins font-medium cursor-pointer text-[16px] ${
+              active === nav.title ? "text-white" : "text-dimWhite"
+            } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
+            onClick={() => handleNavClick(nav.title)}
           >
-            {navLinks.map((nav, index) => (
-              <motion.li
-                variants={itemVariants}
-                key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-white" : "text-dimWhite"
-                } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => handleNavClick(nav.title)}
-              >
-                <Link to={nav.path}>{nav.title}</Link>
-              </motion.li>
-            ))}
-          </motion.ul>
-        </motion.div>
-      </div>
-    </nav>
+            <Link to={nav.path}>{nav.title}</Link>
+          </motion.li>
+        ))}
+      </motion.ul>
+    </motion.div>
+  </div>
+</nav>
   );
 };
 

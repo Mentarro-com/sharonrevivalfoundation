@@ -188,7 +188,7 @@ const Footer = () => {
             </div>
 
             {/* Google Map */}
-            <div className="relative w-full h-60 md:h-80 bg-gray-200 rounded-lg overflow-hidden">
+            <div className="relative w-full h-60 md:h-180 bg-gray-200 rounded-lg overflow-hidden">
               <iframe
                 src={mapSrc}
                 width="100%"
