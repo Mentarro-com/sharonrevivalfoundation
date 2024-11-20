@@ -32,19 +32,19 @@ const ThumbnailSlider = () => {
         ref={(slider) => (mainSlider = slider)}
       >
         <SplideSlide>
-          <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Thumbnail 1" />
+          <img src="Carrom (2).jpg" alt="Thumbnail 1" />
         </SplideSlide>
         <SplideSlide>
-          <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Thumbnail 2" />
+          <img src = "Counselling_room.jpg" alt="Thumbnail 2" />
         </SplideSlide>
         <SplideSlide>
-          <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Thumbnail 3" />
+          <img src = "Hall.jpeg" alt="Thumbnail 3" />
         </SplideSlide>
         <SplideSlide>
-          <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Thumbnail 3" />
+          <img src = "Office_hall.jpg" alt="Thumbnail 3" />
         </SplideSlide>
         <SplideSlide>
-          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Thumbnail 3" />
+          <img src="Doctor.jpeg" alt="Thumbnail 3" />
         </SplideSlide>
       </Splide>
       <div className="splide-container">
@@ -80,19 +80,19 @@ const ThumbnailSlider = () => {
         className="thumbnail-slider"
       >
         <SplideSlide>
-          <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Thumbnail 1" />
+          <img src="Carrom (2).jpg" alt="Thumbnail 1" />
         </SplideSlide>
         <SplideSlide>
-          <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Thumbnail 2" />
+          <img src="Counselling_room.jpg" alt="Thumbnail 2" />
         </SplideSlide>
         <SplideSlide>
-          <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Thumbnail 3" />
+          <img src="Hall.jpeg"  alt="Thumbnail 3" />
         </SplideSlide>
         <SplideSlide>
-          <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Thumbnail 3" />
+          <img src="Office_hall.jpg" alt="Thumbnail 3" />
         </SplideSlide>
         <SplideSlide>
-          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Thumbnail 3" />
+          <img src="Doctor.jpeg"  alt="Thumbnail 3" />
         </SplideSlide>
       </Splide>
       </div>

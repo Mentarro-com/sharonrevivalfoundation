@@ -60,7 +60,7 @@ const Footer = () => {
           {/* Company Logo and Description */}
           <div className="flex flex-col items-start space-y-6 flex-1">
             <img
-              src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+              src="logo1.png"
               alt="Company Logo"
               className="w-32 h-auto"
             />

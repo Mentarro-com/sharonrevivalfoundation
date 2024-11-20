@@ -2,10 +2,10 @@ import React from 'react';
 
 const images = [
   // Add image URLs here
-  'https://via.placeholder.com/300',
-  'https://via.placeholder.com/301',
-  'https://via.placeholder.com/302',
-  'https://via.placeholder.com/303',
+  'Quotes.jpg',
+  'Necessities.jpg',
+  'Award1.jpg',
+  'Award2.jpg',
 ];
 
 const ImageGallery = () => {

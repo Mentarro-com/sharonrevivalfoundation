@@ -20,7 +20,7 @@ export const slides = [
     title: 'CHECKUP AREA',
   },
   {
-    src: '/Office.jpeg',
+    src: 'Office_hall.jpg',
     description: 'The office hall in a rehab center is a space for administrative tasks',
     title: 'OFFICE HALL',
   },
@@ -30,63 +30,48 @@ export const slides = [
     title: 'COUNSELING AREA',
   },
   {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    src: "Therapy.jpeg",
     description: 'The teaching room in a rehab center is where educational sessions are conducted',
     title: 'TEACHING ROOM',
   },
   {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    src: "Praying_hall.jpg",
     description: 'The praying hall in a rehab center is a space for spiritual reflection',
     title: 'PRAYING HALL',
   },
   {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    src: "Activity_hall.jpg",
     description: 'The activity hall in a rehab center is a space for therapeutic and recreational activities',
     title: 'ACTIVITY HALL',
   },
   {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    src: "Meeting_hall.jpg",
     description: 'The meeting hall in a rehab center is used for group sessions and discussions.',
     title: 'MEETING HALL',
   },
   {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    src: "TV_Hall.jpg",
     description: 'The TV room in a rehab center is a space for relaxation and entertainment',
     title: 'TV ROOM',
   },
   {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    src: 'Counselling_room.jpg',
     description: 'The chess playing area in a rehab center is for strategic gaming',
-    title: 'CHESS',
+    title: 'COUNSELLING ROOM',
   },
   {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    src: "Carrom (2).jpg",
     description: 'The carrom playing area in a rehab center is for recreational board games',
     title: 'CARROM',
   },
   {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    src: "Bedroom.jpg",
     description: 'The bedroom in a rehab center is a resting space for patients',
     title: 'BEDROOM1',
   },
   {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    src: "Bedroom2.jpg",
     description: 'The bedroom in a rehab center is a comfortable retreat for resting',
     title: 'BEDROOM 2',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    description: 'The restroom in a rehab center is for personal hygiene and convenience.',
-    title: 'RESTROOM',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    description: 'A fire extinguisher in a rehab center is essential for fire safety.',
-    title: 'FIRE SAFETY',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    description: 'CCTV cameras in a rehab center ensure security and safety monitoring.',
-    title: '24/7 SURVEILLANCE CAMERA',
   },
 ];

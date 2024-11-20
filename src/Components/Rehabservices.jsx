@@ -136,7 +136,7 @@ const RehabServices = () => {
       </h2>
 
       <Section variants={fadeInLeft} id="holistic-therapies">
-        <div className="w-full md:w-3/5 lg:w-1/2 px-4">
+        <div className="w-full my-12 md:w-3/5 lg:w-1/2 px-4">
           <img
             src="/service6.jpg"
             alt="gem"
@@ -164,7 +164,7 @@ const RehabServices = () => {
       </Section>
 
       <Section variants={fadeInRight} id="alcohol-detox">
-        <div className="w-full md:w-3/5 lg:w-1/2 px-4">
+        <div className="w-full my-12 md:w-3/5 lg:w-1/2 px-4">
           <img
             src="/service9.jpg"
             alt="project members"
@@ -193,7 +193,7 @@ const RehabServices = () => {
 
       {/* Third service section with fadeInLeft for consistency */}
       <Section variants={fadeInLeft} id="medical-detox">
-        <div className="w-full md:w-3/5 lg:w-1/2 px-4">
+        <div className="w-full my-12 md:w-3/5 lg:w-1/2 px-4">
           <img
             src="/service6.jpg"
             alt="editor"
@@ -221,7 +221,7 @@ const RehabServices = () => {
       </Section>
 
       <Section variants={fadeInRight}>
-        <div className="w-full md:w-3/5 lg:w-1/2 px-4">
+        <div className="w-full my-12 md:w-3/5 lg:w-1/2 px-4">
           <img
             src="/smoke.webp"
             alt="bulk editing"

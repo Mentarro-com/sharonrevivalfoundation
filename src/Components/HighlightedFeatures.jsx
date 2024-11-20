@@ -13,7 +13,7 @@ const HighlightedFeatures = () => {
         <div className="mr-0 md:mr-8 mb-6 md:mb-0">
           <img
             className="w-1/2 md:w-full mx-auto "
-            src="https://via.placeholder.com/400"
+            src="logo1.png"
             alt="can_help_banner"
           />
         </div>
