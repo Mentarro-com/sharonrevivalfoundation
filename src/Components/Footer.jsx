@@ -72,7 +72,7 @@ const Footer = () => {
             </p>
             {/* Icons below the description */}
             <div className="flex space-x-4 mt-4">
-              <FontAwesomeIcon
+              {/* <FontAwesomeIcon
                 icon={faFacebookF}
                 className="text-lg hover:text-[#1877F2] transition duration-300 cursor-pointer"
               />
@@ -91,7 +91,7 @@ const Footer = () => {
               <FontAwesomeIcon
                 icon={faWhatsapp}
                 className="text-lg hover:text-[#25D366] cursor-pointer"
-              />
+              />*/}
             </div>
           </div>
 
@@ -164,7 +164,7 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex space-x-4">
-                <FontAwesomeIcon
+                {/*<FontAwesomeIcon
                   icon={faFacebookF}
                   className="text-lg hover:text-[#1877F2] transition duration-300 cursor-pointer"
                 />
@@ -183,7 +183,7 @@ const Footer = () => {
                 <FontAwesomeIcon
                   icon={faWhatsapp}
                   className="text-lg hover:text-[#25D366] cursor-pointer"
-                />
+                />*/}
               </div>
             </div>
 

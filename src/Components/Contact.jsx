@@ -2,7 +2,7 @@ import React from 'react'
 
 function Phone() {
 
-    const phoneNumber="+919789053645"
+    const phoneNumber="+917200800853"
   return (
     <div
       className="fixed bottom-[4vh] left-3 bg-gray-800 text-white w-14 h-14 flex z-50 justify-center items-center rounded-full cursor-pointer "
